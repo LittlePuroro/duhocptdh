@@ -61,7 +61,7 @@ $(document).ready(function(){
         $(this).parent().addClass('active');
         var target = "#" + this.getAttribute('data-target');
         $('html, body').animate({
-            scrollTop: ($(target).offset().top - 50)
+            scrollTop: ($(target).offset().top - 64)
         }, 1000);
     });
 })

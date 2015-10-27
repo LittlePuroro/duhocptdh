@@ -34,7 +34,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse smth" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" data-target="top">Trang chủ<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" data-target="top">Trang chủ<span class="sr-only">(current)</span></a></li>
                     <li><a href="#" data-target="anhth">Trung học Anh</a></li>
                     <li><a href="#" data-target="myca">Trung học Mỹ + Canada</a></li>
                     <li><a href="#" data-target="chiase">Du học sinh chia sẻ</a></li>
