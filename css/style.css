@@ -16,6 +16,12 @@ body {
         padding: 0;}
 .space {
     height: 50px;}
+ul {
+    padding-left: 15px;
+}
+.myca li {
+    list-style: none;
+}
 /*-------font default--------------*/
 h1 {
     font-family: "UTM colossalis";
@@ -34,7 +40,7 @@ h4 {
 .tk-main h2 {
     color: #305196;
     text-align: center;}
-p {
+p, li {
     font-family: "myriadpro";
     text-align: justify;
     text-decoration: none;
@@ -80,7 +86,7 @@ p {
         font-size: 22px;    }
     h4 {
         font-size: 20px;    }
-    p {
+    p, li {
         font-size: 15px;    }
 }
 /*------button dang ky-------*/
@@ -303,12 +309,8 @@ form button, .btn-primary  {
     .myca {
         background-image: url("../photos/bg-mycan.jpg");    }
 }
-.myca p, .tuvan p {
+.myca li, .tuvan li {
     color: white;}
-.myca-r4 .col-sm-4, .tuvan .col-sm-4 {
-    padding-top: 20px;}
-.myca-r2 .col-sm-6 {
-    padding: 20px 60px 0 60px;}
 .myca-r5 form button {
     background-color: white;
     color: #305196;
@@ -318,7 +320,21 @@ form button, .btn-primary  {
     font-size: 20px;}
 @media (max-width:767px){
     .firstcol, .mdcol, .lastcol {
+        padding: 0 60px 0 60px ;
         padding-left: 60px;
+        padding-right: 60px;    }
+    .myca-r2 .col-sm-6, .myca-r4 .col-sm-4 {
+        padding-top: 0;    }
+}
+@media (min-width: 768px)  {
+    .myca-r4 .col-sm-4, .tuvan .col-sm-4 {
+        padding-top: 20px;}
+    .myca-r2 .col-sm-6 {
+        padding: 20px 60px 0 60px;}
+    .firstcol, .mdcol {
+        padding-left: 60px;
+        padding-right: 20px;    }
+    .lastcol {
         padding-right: 60px;    }
 }
 @media (max-width:991px) {
@@ -326,22 +342,12 @@ form button, .btn-primary  {
         display: none;    }
     .myca {
         background-repeat: no-repeat;    }
-    .firstcol, .mdcol {
-        padding-left: 60px;
-        padding-right: 20px;    }
-    .lastcol {
-        padding-right: 60px;    }
     .myca-r5 form button {
         margin: 10px 0 40px 0;    }
 }
 @media (min-width:992px){
     .myca {
         background-position: 100%;    }
-    .firstcol, .mdcol {
-        padding-left: 60px;
-        padding-right: 20px;    }
-    .lastcol {
-        padding-right: 60px;    }
     .myca-r5 form button {
         margin: 30px 0 35px 0;    }
 }
@@ -403,8 +409,6 @@ form button, .btn-primary  {
         background-color: #464646;  }
     .ft-r1 {
         padding-top: 20px;}
-    .ft-r2 .col-xs-12 p {
-        text-align: center;    }
 }
 @media (min-width: 768px) {
     .footer {
